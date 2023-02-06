@@ -55,9 +55,9 @@ RUN git clone https://github.com/kwikteam/npy-matlab.git /home/matlab/npy-matlab
     && git -C /home/matlab/npy-matlab checkout b7b0a4ef6ba26d98a8c54e651d5444083c88311c
 
 # Get Gold Lab FIRA code, pegged to a specific commit to make this reproducible (no tags in this repo).
-# commit c646460e1fa3dd84decffa836dd57df4df39d070 is from 2023-02-06
+# commit 9d5179793e6ecfd2771ecc13d803cd1b3adc9c6e is from 2023-02-06
 RUN git clone https://github.com/TheGoldLab/Lab_Matlab_Utilities.git /home/matlab/Lab_Matlab_Utilities \
-    && git -C /home/matlab/Lab_Matlab_Utilities checkout c646460e1fa3dd84decffa836dd57df4df39d070
+    && git -C /home/matlab/Lab_Matlab_Utilities checkout 9d5179793e6ecfd2771ecc13d803cd1b3adc9c6e
 
 # Get the Matlab code for converting .plx and Phy files to FIRA.
 COPY ./matlab /home/matlab/phy-to-fira
